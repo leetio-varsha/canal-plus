@@ -1,0 +1,68 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "tsconfig.json"
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:import/typescript",
+        "plugin:jsx-a11y/recommended",
+        "prettier"
+    ],
+    "rules": {
+        "react/react-in-jsx-scope": "off",
+        "complexity": [
+            "error",
+            7
+        ],
+        "no-console": "off",
+        "prefer-type-cast": "off",
+        "object-literal-sort-keys": "off",
+        "no-var": "error",
+        "@typescript-eslint/no-var-requires": "error",
+        "no-undef-init": "error",
+        "no-return-await": "error",
+        "no-magic-numbers": "off",
+        "no-warning-comments": "off",
+        "ordered-imports": "off",
+        "no-implicit-dependencies": "off",
+        "no-submodule-imports": "off",
+        "no-duplicate-imports": "error",
+        "no-cookies": "off",
+        "import-name": "off",
+        "export-name": "off",
+        "no-backbone-get-set-outside-model": "off",
+        "react/no-danger": "warn",
+        "react/prop-types": "off",
+        "react/no-unescaped-entities": "off",
+        "@typescript-eslint/interface-name-prefix": "off",
+        "@typescript-eslint/no-inferrable-types": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/naming-convention": [
+            "error",
+            {
+                "selector": "interface",
+                "format": [
+                    "PascalCase"
+                ],
+                "prefix": [
+                    "I"
+                ]
+            },
+            {
+                "selector": "typeParameter",
+                "format": [
+                    "PascalCase"
+                ],
+                "prefix": [
+                    "T"
+                ]
+            }
+        ]
+    }
+}
